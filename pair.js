@@ -1,4 +1,17 @@
 var cart = [];
+
+
+function addToCartt(name, reference, Storage, price) {
+    var phone = {
+        name: name,
+        reference:reference,
+        Storage:Storage,
+        price: price
+    };
+    cart.push(phone);
+    updateCartDisplay();
+}
+
  function addToCart(name, description, price) {
      var accessory = {
          name: name,
@@ -17,3 +30,4 @@ var cart = [];
   $(".as").hide();
 
 })
+

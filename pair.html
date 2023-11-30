@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+
+
 <html>
 <head>
 <title>THUB</title>
@@ -59,7 +62,74 @@
 </div>
 </div>
   <div class="prod">
-    <h1 style="color: beige;">Phones(aziz)</h1>
+    <header>
+        <h2 id="nameOfProduct">our products list :</h2>
+    </header> 
+    <div class="product" id="product1">
+        <img src= "https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/s/m/smartphone-samsung-galaxy-a14-4g-4go-64go-silver-20.jpg" alt="" width=200 height= 150>
+        <h2 id="nameOfProduct">SMARTPHONE SAMSUNG GALAXY A14   - SILVER </h2>
+        <h2>reference : SM-A146-4/64-SILVER</h2>
+        <h2>storage : 64 GO </h2>
+        <h2> Price : 639,000 DT</h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product2">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/i/p/iphone-11-64go-jaune-apple_1.jpg"  alt="" width=200 height=150 >
+        <h2 id="nameOfProduct">IPHONE 11  YELLOW - APPLE </h2>
+        <h2>reference :IPH-11-128-YELLOW </h2>
+        <h2>storage :128GO </h2>
+        <h2> Price :2619,000 DT  </h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product3">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/s/m/smartphone-oppo-a17k-3go-64go-bleu1.jpg"  alt="" width=200 height=150>
+        <h2 id="nameOfProduct">SMARTPHONE OPPO BLEU </h2>
+        <h2>reference : BU-OPPO-A17K-64</h2>
+        <h2>storage :64GO  </h2>
+        <h2> Price :479,000 DT </h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product4">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/i/p/iphone-12-128go-bleu-apple2.jpg"  alt="" width=200 height=150>
+        <h2 id="nameOfProduct">IPHONE 12 BLEU - APPLE </h2>
+        <h2>reference :IPH-12-128-BL </h2>
+        <h2>storage :128GO  </h2>
+        <h2> Price : 3 099,000 DT</h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product5">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/s/m/smartphone-huawei-nova-11-8go-256go-noir-20.jpg"  alt="" width=200 height=150>
+        <h2 id="nameOfProduct">SMARTPHONE HUAWEI NOVA 11 - BLACK </h2>
+        <h2>reference :HU-NOVA11-BK </h2>
+        <h2>storage :256GO </h2>
+        <h2> Price :2 199,000 DT
+        </h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product6">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/i/p/iphone-14-512go-violet-apple.jpg"  alt="" width=200 height=150>
+        <h2 id="nameOfProduct"> IPHONE 14 VIOLET - APPLE </h2>
+        <h2>reference :IPH-14-512-PURPLE </h2>
+        <h2>storage :512GO </h2>
+        <h2> Price :5 199,000 DT    </h2>
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div class="product" id="product7">
+        <img src="https://mk-media.mytek.tn/media/catalog/product/cache/8be3f98b14227a82112b46963246dfe1/s/m/smartphone-infinix-hot-30-8go-128go-blanc-10.jpg"  alt="" width=200 height=150>
+        <h2 id="nameOfProduct">SMARTPHONE INFINIX HOT 30 - WHITE </h2>
+        <h2>reference : INFINIX-HOT30-128-WHITE </h2>
+        <h2>storage : 128GO </h2>
+        <h2> Price : 599,000 DT  </h2>  
+        
+    
+        <button onclick="addToCart( )">Add to Cart</button>
+    </div>
+    <div id="cart">
+        <h2 id="shopCart">Shopping Cart</h2>
+    
+        <ul id="cart-items"></ul>
+        <h2 id="shopCart">Total: $<span id="cart-total">0.00</span></h2>
+    </div>
 
   </div>
 
@@ -74,5 +144,6 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="pair.js"></script>
+>>>>>>> 62edd4582224658af1b96ddb2d1636d3ad31b23e
 </body>
 </html>
