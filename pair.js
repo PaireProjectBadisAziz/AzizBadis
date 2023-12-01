@@ -1,33 +1,49 @@
 var cart = [];
 
 
-function addToCartt(name, reference, Storage, price) {
+function addToCart(name,price) {
     var phone = {
         name: name,
-        reference:reference,
-        Storage:Storage,
         price: price
-    };
-    cart.push(phone);
-    updateCartDisplay();
+    }
+    cart.push(phone)
+    updateCartDisplay()
+}
+function removeFromCart(index) {
+  cart.splice(index, 1)// Remove item from the cart array at the specified index
+  updateCartDisplay()
 }
 
- function addToCart(name, description, price) {
-     var accessory = {
-         name: name,
-         description:description,
-         price: price
-     }
-     cart.push(accessory)
-      updateCartDisplay()
+
+function updateCartDisplay(){
+  var cartItemsElement = $('#cart-items')
+  var cartTotalElement = $('#cart-total')
+
+  cartItemsElement.empty()
+
+
+  for (var index = 0; index < cart.length; index++) {
+    var product = cart[index]
+    var listItem = $('<li>').text(product.name + ' - $' + product.price.toFixed(2))
+    var removeButton = $('<button id="buttonremove" onclick="removeFromCart('+index+')">').text('Remove')
+    $('#cart-items').append(listItem)
+    $('#cart-items').append(removeButton)
+  }
+
+  var total = 0
+  for (var index = 0; index < cart.length; index++) {
+    var product = cart[index]
+    total += product.price
+  }
+  cartTotalElement.text(total.toFixed(2))
 }
   $(".access").click(function(){
-  $(".as").show();
-  $(".prod").hide();
-});
+  $(".as").show()
+  $(".prod").hide()
+})
   $(".Phones").click(function(){
-  $(".prod").show();
-  $(".as").hide();
+  $(".prod").show()
+  $(".as").hide() 
 
 })
 
